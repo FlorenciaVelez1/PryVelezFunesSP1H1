@@ -24,7 +24,7 @@ namespace PryVelezFunesSP1H1
         }
         private void mskIdentidicador_TextChanged(object sender, EventArgs e)
         {
-            if (txtCultivo.Text != "" & mskIdentificador.Text != "")
+            if (txtCultivo.Text != "" & mskIdentificador.MaskCompleted)
             {
                 cmdCargar.Enabled = true;
             }
@@ -35,7 +35,7 @@ namespace PryVelezFunesSP1H1
         }
         private void txtCultivo_TextChanged(object sender, EventArgs e)
         {
-            if (txtCultivo.Text != "" & mskIdentificador.Text != "")
+            if (txtCultivo.Text != "" & mskIdentificador.MaskCompleted)
             {
                 cmdCargar.Enabled = true;
             }

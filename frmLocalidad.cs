@@ -47,7 +47,7 @@ namespace PryVelezFunesSP1H1
 
         private void cmdCargar_Click(object sender, EventArgs e)
         {
-            StreamWriter Localidad = new StreamWriter("./localidad.txt", true);
+            StreamWriter Localidad = new StreamWriter("./localidades.txt", true);
             Localidad.WriteLine(mskIdentificador.Text + " " + txtLocalidad.Text);
             MessageBox.Show("Se han cargado correctamente los datos ingresados.");
             Localidad.Close();

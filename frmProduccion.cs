@@ -23,5 +23,23 @@ namespace PryVelezFunesSP1H1
             lstCultivo.SelectedIndex = 0;
             lstLocalidad.SelectedIndex = 0; 
         }
+        private void frmProduccion_Load(object sender, EventArgs e)
+        {
+            StreamReader LectorLocalidades = new StreamReader("./localidades.txt");
+            while (!LectorLocalidades.EndOfStream)
+            {
+                string Informacion = LectorLocalidades.ReadLine();
+                lstLocalidad.Items.Add(Informacion.Substring(6));
+            }
+            LectorLocalidades.Close();
+            StreamReader LectorCultivo = new StreamReader("./cultivos.txt");
+            while (!LectorCultivo.EndOfStream)
+            {
+                string Informacion = LectorCultivo.ReadLine();
+                lstCultivo.Items.Add(Informacion.Substring(6));
+            }
+            LectorCultivo.Close();
+
+        }
     }
 }

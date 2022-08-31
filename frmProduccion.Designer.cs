@@ -45,10 +45,10 @@ namespace PryVelezFunesSP1H1
             // 
             this.cmdLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.cmdLimpiar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.cmdLimpiar.Location = new System.Drawing.Point(291, 18);
-            this.cmdLimpiar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdLimpiar.Location = new System.Drawing.Point(130, 162);
+            this.cmdLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmdLimpiar.Name = "cmdLimpiar";
-            this.cmdLimpiar.Size = new System.Drawing.Size(83, 33);
+            this.cmdLimpiar.Size = new System.Drawing.Size(62, 27);
             this.cmdLimpiar.TabIndex = 5;
             this.cmdLimpiar.Text = "Limpiar";
             this.cmdLimpiar.UseVisualStyleBackColor = true;
@@ -58,10 +58,10 @@ namespace PryVelezFunesSP1H1
             // 
             this.cmdCargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.cmdCargar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.cmdCargar.Location = new System.Drawing.Point(291, 143);
-            this.cmdCargar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmdCargar.Location = new System.Drawing.Point(14, 162);
+            this.cmdCargar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmdCargar.Name = "cmdCargar";
-            this.cmdCargar.Size = new System.Drawing.Size(83, 33);
+            this.cmdCargar.Size = new System.Drawing.Size(62, 27);
             this.cmdCargar.TabIndex = 6;
             this.cmdCargar.Text = "Cargar";
             this.cmdCargar.UseVisualStyleBackColor = true;
@@ -71,9 +71,10 @@ namespace PryVelezFunesSP1H1
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblFecha.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblFecha.Location = new System.Drawing.Point(15, 22);
+            this.lblFecha.Location = new System.Drawing.Point(11, 18);
+            this.lblFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(49, 18);
+            this.lblFecha.Size = new System.Drawing.Size(41, 15);
             this.lblFecha.TabIndex = 6;
             this.lblFecha.Text = "Fecha";
             // 
@@ -82,9 +83,10 @@ namespace PryVelezFunesSP1H1
             this.lblCantidad.AutoSize = true;
             this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblCantidad.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblCantidad.Location = new System.Drawing.Point(15, 155);
+            this.lblCantidad.Location = new System.Drawing.Point(11, 126);
+            this.lblCantidad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(66, 18);
+            this.lblCantidad.Size = new System.Drawing.Size(56, 15);
             this.lblCantidad.TabIndex = 16;
             this.lblCantidad.Text = "Cantidad";
             // 
@@ -93,19 +95,19 @@ namespace PryVelezFunesSP1H1
             this.lblLocalidad.AutoSize = true;
             this.lblLocalidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblLocalidad.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblLocalidad.Location = new System.Drawing.Point(15, 66);
+            this.lblLocalidad.Location = new System.Drawing.Point(11, 54);
+            this.lblLocalidad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLocalidad.Name = "lblLocalidad";
-            this.lblLocalidad.Size = new System.Drawing.Size(71, 18);
+            this.lblLocalidad.Size = new System.Drawing.Size(61, 15);
             this.lblLocalidad.TabIndex = 13;
             this.lblLocalidad.Text = "Localidad";
             // 
             // mskDate
             // 
-            this.mskDate.Location = new System.Drawing.Point(109, 21);
-            this.mskDate.Margin = new System.Windows.Forms.Padding(4);
+            this.mskDate.Location = new System.Drawing.Point(82, 17);
             this.mskDate.Mask = "00/00/0000";
             this.mskDate.Name = "mskDate";
-            this.mskDate.Size = new System.Drawing.Size(145, 22);
+            this.mskDate.Size = new System.Drawing.Size(110, 20);
             this.mskDate.TabIndex = 1;
             this.mskDate.ValidatingType = typeof(System.DateTime);
             // 
@@ -113,42 +115,42 @@ namespace PryVelezFunesSP1H1
             // 
             this.lblCultivo.AutoSize = true;
             this.lblCultivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCultivo.Location = new System.Drawing.Point(15, 111);
-            this.lblCultivo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCultivo.Location = new System.Drawing.Point(11, 90);
             this.lblCultivo.Name = "lblCultivo";
-            this.lblCultivo.Size = new System.Drawing.Size(53, 18);
+            this.lblCultivo.Size = new System.Drawing.Size(43, 15);
             this.lblCultivo.TabIndex = 18;
             this.lblCultivo.Text = "Cultivo";
             // 
             // mskCantidad
             // 
-            this.mskCantidad.Location = new System.Drawing.Point(109, 154);
-            this.mskCantidad.Margin = new System.Windows.Forms.Padding(4);
+            this.mskCantidad.Location = new System.Drawing.Point(82, 125);
             this.mskCantidad.Name = "mskCantidad";
-            this.mskCantidad.Size = new System.Drawing.Size(145, 22);
+            this.mskCantidad.Size = new System.Drawing.Size(110, 20);
             this.mskCantidad.TabIndex = 4;
             // 
             // lstLocalidad
             // 
             this.lstLocalidad.FormattingEnabled = true;
-            this.lstLocalidad.Location = new System.Drawing.Point(109, 60);
+            this.lstLocalidad.Location = new System.Drawing.Point(82, 49);
+            this.lstLocalidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lstLocalidad.Name = "lstLocalidad";
-            this.lstLocalidad.Size = new System.Drawing.Size(145, 24);
+            this.lstLocalidad.Size = new System.Drawing.Size(110, 21);
             this.lstLocalidad.TabIndex = 2;
             // 
             // lstCultivo
             // 
             this.lstCultivo.FormattingEnabled = true;
-            this.lstCultivo.Location = new System.Drawing.Point(109, 105);
+            this.lstCultivo.Location = new System.Drawing.Point(82, 85);
+            this.lstCultivo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lstCultivo.Name = "lstCultivo";
-            this.lstCultivo.Size = new System.Drawing.Size(145, 24);
+            this.lstCultivo.Size = new System.Drawing.Size(110, 21);
             this.lstCultivo.TabIndex = 3;
             // 
             // frmProduccion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(393, 202);
+            this.ClientSize = new System.Drawing.Size(205, 200);
             this.Controls.Add(this.lstCultivo);
             this.Controls.Add(this.lstLocalidad);
             this.Controls.Add(this.mskCantidad);
@@ -159,9 +161,9 @@ namespace PryVelezFunesSP1H1
             this.Controls.Add(this.cmdLimpiar);
             this.Controls.Add(this.cmdCargar);
             this.Controls.Add(this.lblFecha);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmProduccion";
             this.Text = "Produccion";
+            this.Load += new System.EventHandler(this.frmProduccion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
