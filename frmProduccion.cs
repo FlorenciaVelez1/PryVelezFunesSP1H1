@@ -25,7 +25,7 @@ namespace PryVelezFunesSP1H1
         }
         private void frmProduccion_Load(object sender, EventArgs e)
         {
-            StreamReader LectorLocalidades = new StreamReader("./localidades.txt");
+             StreamReader LectorLocalidades = new StreamReader("./localidades.txt");
             while (!LectorLocalidades.EndOfStream)
             {
                 string Informacion = LectorLocalidades.ReadLine();
