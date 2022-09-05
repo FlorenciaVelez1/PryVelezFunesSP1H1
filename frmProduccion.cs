@@ -41,5 +41,9 @@ namespace PryVelezFunesSP1H1
             LectorCultivo.Close();
 
         }
+        private void cmdCargar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -45,8 +45,8 @@ namespace PryVelezFunesSP1H1
             // 
             this.cmdLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.cmdLimpiar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.cmdLimpiar.Location = new System.Drawing.Point(130, 162);
-            this.cmdLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdLimpiar.Location = new System.Drawing.Point(14, 162);
+            this.cmdLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.cmdLimpiar.Name = "cmdLimpiar";
             this.cmdLimpiar.Size = new System.Drawing.Size(62, 27);
             this.cmdLimpiar.TabIndex = 5;
@@ -58,13 +58,14 @@ namespace PryVelezFunesSP1H1
             // 
             this.cmdCargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.cmdCargar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.cmdCargar.Location = new System.Drawing.Point(14, 162);
-            this.cmdCargar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdCargar.Location = new System.Drawing.Point(130, 162);
+            this.cmdCargar.Margin = new System.Windows.Forms.Padding(2);
             this.cmdCargar.Name = "cmdCargar";
             this.cmdCargar.Size = new System.Drawing.Size(62, 27);
             this.cmdCargar.TabIndex = 6;
             this.cmdCargar.Text = "Cargar";
             this.cmdCargar.UseVisualStyleBackColor = true;
+            this.cmdCargar.Click += new System.EventHandler(this.cmdCargar_Click);
             // 
             // lblFecha
             // 
@@ -130,18 +131,20 @@ namespace PryVelezFunesSP1H1
             // 
             // lstLocalidad
             // 
+            this.lstLocalidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.lstLocalidad.FormattingEnabled = true;
             this.lstLocalidad.Location = new System.Drawing.Point(82, 49);
-            this.lstLocalidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lstLocalidad.Margin = new System.Windows.Forms.Padding(2);
             this.lstLocalidad.Name = "lstLocalidad";
             this.lstLocalidad.Size = new System.Drawing.Size(110, 21);
             this.lstLocalidad.TabIndex = 2;
             // 
             // lstCultivo
             // 
+            this.lstCultivo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.lstCultivo.FormattingEnabled = true;
             this.lstCultivo.Location = new System.Drawing.Point(82, 85);
-            this.lstCultivo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lstCultivo.Margin = new System.Windows.Forms.Padding(2);
             this.lstCultivo.Name = "lstCultivo";
             this.lstCultivo.Size = new System.Drawing.Size(110, 21);
             this.lstCultivo.TabIndex = 3;
