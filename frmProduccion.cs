@@ -25,25 +25,31 @@ namespace PryVelezFunesSP1H1
         }
         private void frmProduccion_Load(object sender, EventArgs e)
         {
-             StreamReader LectorLocalidades = new StreamReader("./localidades.txt");
+            StreamReader LectorLocalidades = new StreamReader("./Localidades.txt");
             while (!LectorLocalidades.EndOfStream)
             {
                 string Informacion = LectorLocalidades.ReadLine();
                 lstLocalidad.Items.Add(Informacion.Substring(6));
             }
             LectorLocalidades.Close();
-            StreamReader LectorCultivo = new StreamReader("./cultivos.txt");
+            StreamReader LectorCultivo = new StreamReader("./Cultivos.txt");
             while (!LectorCultivo.EndOfStream)
             {
                 string Informacion = LectorCultivo.ReadLine();
                 lstCultivo.Items.Add(Informacion.Substring(6));
             }
             LectorCultivo.Close();
-
         }
         private void cmdCargar_Click(object sender, EventArgs e)
         {
-
+            StreamWriter Produccion = new StreamWriter("./Produccion.txt", true);
+            Produccion.WriteLine(mskDate.Text + "," + lstLocalidad.SelectedItem + "," + lstCultivo.SelectedItem + "," + mskCantidad.Text);
+            MessageBox.Show("Se han cargado correctamente los datos ingresados.");
+            Produccion.Close();
+            mskDate.Text = "";
+            lstLocalidad.SelectedIndex = -1;
+            lstCultivo.SelectedIndex = -1;
+            mskCantidad.Text = "";
         }
     }
 }

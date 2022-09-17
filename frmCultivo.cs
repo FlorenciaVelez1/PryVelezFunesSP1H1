@@ -46,12 +46,34 @@ namespace PryVelezFunesSP1H1
         }
         private void cmdCargar_Click(object sender, EventArgs e)
         {
-            StreamWriter Cultivo = new StreamWriter("./cultivos.txt", true);
-            Cultivo.WriteLine(mskIdentificador.Text + " " + txtCultivo.Text);
-            MessageBox.Show("Se han cargado correctamente los datos ingresados.");
-            Cultivo.Close();
-            txtCultivo.Text = "";
-            mskIdentificador.Text = "";
+            bool chequeo = false;
+            if (File.Exists("./Cultivos.txt"))
+            {
+                StreamReader srControlCultivo = new StreamReader("./Cultivos.txt");
+                while (!srControlCultivo.EndOfStream)
+                {
+                    string auxCultivos = srControlCultivo.ReadLine();
+                    string[] Cultivos = auxCultivos.Split(',');
+                    if (mskIdentificador.Text == Cultivos[0])
+                    {
+                        MessageBox.Show("El ID del cultivo se ha repetido, intentelo nuevamente");
+                        mskIdentificador.Text = "";
+                        mskIdentificador.Focus();
+                        chequeo = true;
+                    }
+                }
+                srControlCultivo.Close();
+            }
+            if(chequeo == false)
+            {
+                StreamWriter Cultivo = new StreamWriter("./Cultivos.txt", true);
+                Cultivo.WriteLine(mskIdentificador.Text + "," + txtCultivo.Text);
+                MessageBox.Show("Se han cargado correctamente los datos ingresados.");
+                Cultivo.Close();
+                txtCultivo.Text = "";
+                mskIdentificador.Text = "";
+            }
+            
         }
     }
 }

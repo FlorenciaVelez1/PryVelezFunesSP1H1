@@ -44,15 +44,35 @@ namespace PryVelezFunesSP1H1
                 cmdCargar.Enabled = false;
             }
         }
-
         private void cmdCargar_Click(object sender, EventArgs e)
         {
-            StreamWriter Localidad = new StreamWriter("./localidades.txt", true);
-            Localidad.WriteLine(mskIdentificador.Text + " " + txtLocalidad.Text);
-            MessageBox.Show("Se han cargado correctamente los datos ingresados.");
-            Localidad.Close();
-            txtLocalidad.Text = "";
-            mskIdentificador.Text = "";
+            bool chequeo = false;
+            if (File.Exists("./Localidades.txt"))
+            {
+                StreamReader srControlLocalidades = new StreamReader("./Localidades.txt");
+                while (!srControlLocalidades.EndOfStream)
+                {
+                    string auxLocalidad = srControlLocalidades.ReadLine();
+                    string[] Localidad = auxLocalidad.Split(',');
+                    if (mskIdentificador.Text == Localidad[0])
+                    {
+                        MessageBox.Show("El ID de la localidad se ha repetido, intentelo nuevamente");
+                        mskIdentificador.Text = "";
+                        mskIdentificador.Focus();
+                        chequeo = true;
+                    }
+                }
+                srControlLocalidades.Close();
+            }
+            if (chequeo == false)
+            { 
+                StreamWriter Localidad = new StreamWriter("./Localidades.txt", true);
+                Localidad.WriteLine(mskIdentificador.Text + "," + txtLocalidad.Text);
+                MessageBox.Show("Se han cargado correctamente los datos ingresados.");
+                Localidad.Close();
+                txtLocalidad.Text = "";
+                mskIdentificador.Text = "";
+            }
         }
     }
 }
