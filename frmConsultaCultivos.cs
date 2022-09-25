@@ -18,6 +18,7 @@ namespace PryVelezFunesSP1H1
         }
         private void cmdListar_Click(object sender, EventArgs e)
         {
+            //Leo archivo y agrego datos a la grilla
             StreamReader ConsultaCultivos = new StreamReader("./Cultivos.txt");
             while (!ConsultaCultivos.EndOfStream)
             {
@@ -25,6 +26,7 @@ namespace PryVelezFunesSP1H1
                 string[] vectorDatosCultivos = DatosCultivos.Split((','));
                 grillaCultivos.Rows.Add(vectorDatosCultivos[0], vectorDatosCultivos[1]);
             }
+            ConsultaCultivos.Close();
         }
         private void cmdLimpiar_Click(object sender, EventArgs e)
         {

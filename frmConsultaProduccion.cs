@@ -22,6 +22,7 @@ namespace PryVelezFunesSP1H1
         }
         private void cmdListar_Click(object sender, EventArgs e)
         {
+            //Se agrega datos a la grilla
             StreamReader ConsultaProduccion = new StreamReader("./Produccion.txt");
             while (!ConsultaProduccion.EndOfStream)
             {

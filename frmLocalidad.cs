@@ -46,6 +46,7 @@ namespace PryVelezFunesSP1H1
         }
         private void cmdCargar_Click(object sender, EventArgs e)
         {
+            //Se crea booleano para verificar que no se repita el codigo
             bool chequeo = false;
             if (File.Exists("./Localidades.txt"))
             {

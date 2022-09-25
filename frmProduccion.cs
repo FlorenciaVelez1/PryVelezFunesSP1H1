@@ -25,6 +25,7 @@ namespace PryVelezFunesSP1H1
         }
         private void frmProduccion_Load(object sender, EventArgs e)
         {
+            //Se agregan a los lst los datos anteriormente registrados
             StreamReader LectorLocalidades = new StreamReader("./Localidades.txt");
             while (!LectorLocalidades.EndOfStream)
             {

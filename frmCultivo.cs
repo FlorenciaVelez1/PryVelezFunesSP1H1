@@ -46,12 +46,14 @@ namespace PryVelezFunesSP1H1
         }
         private void cmdCargar_Click(object sender, EventArgs e)
         {
+            //Creo booleado para verificar que no se repita codigo
             bool chequeo = false;
             if (File.Exists("./Cultivos.txt"))
             {
                 StreamReader srControlCultivo = new StreamReader("./Cultivos.txt");
                 while (!srControlCultivo.EndOfStream)
                 {
+                    //Split quita coma en el archivo
                     string auxCultivos = srControlCultivo.ReadLine();
                     string[] Cultivos = auxCultivos.Split(',');
                     if (mskIdentificador.Text == Cultivos[0])
@@ -64,6 +66,7 @@ namespace PryVelezFunesSP1H1
                 }
                 srControlCultivo.Close();
             }
+            //Sino se repite codigo, se crea el archivo 
             if(chequeo == false)
             {
                 StreamWriter Cultivo = new StreamWriter("./Cultivos.txt", true);

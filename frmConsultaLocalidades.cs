@@ -23,6 +23,7 @@ namespace PryVelezFunesSP1H1
         }
         private void cmdListar_Click(object sender, EventArgs e)
         {
+            //Agrega datos a la grilla
             StreamReader ConsultaLocalidad = new StreamReader("./Localidades.txt");
             while (!ConsultaLocalidad.EndOfStream)
             {
@@ -30,6 +31,7 @@ namespace PryVelezFunesSP1H1
                 string[] vectorDatosLocalidades = DatosLocalidades.Split((','));
                 grillaLocalidad.Rows.Add(vectorDatosLocalidades[0], vectorDatosLocalidades[1]);
             }
+            ConsultaLocalidad.Close();
         }
     }
 }

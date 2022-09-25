@@ -105,21 +105,21 @@
             // localidadesToolStripMenuItem1
             // 
             this.localidadesToolStripMenuItem1.Name = "localidadesToolStripMenuItem1";
-            this.localidadesToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.localidadesToolStripMenuItem1.Size = new System.Drawing.Size(171, 26);
             this.localidadesToolStripMenuItem1.Text = "Localidades";
             this.localidadesToolStripMenuItem1.Click += new System.EventHandler(this.localidadesToolStripMenuItem1_Click);
             // 
             // cultivosToolStripMenuItem1
             // 
             this.cultivosToolStripMenuItem1.Name = "cultivosToolStripMenuItem1";
-            this.cultivosToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.cultivosToolStripMenuItem1.Size = new System.Drawing.Size(171, 26);
             this.cultivosToolStripMenuItem1.Text = "Cultivos";
             this.cultivosToolStripMenuItem1.Click += new System.EventHandler(this.cultivosToolStripMenuItem1_Click);
             // 
             // producciónToolStripMenuItem1
             // 
             this.producciónToolStripMenuItem1.Name = "producciónToolStripMenuItem1";
-            this.producciónToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.producciónToolStripMenuItem1.Size = new System.Drawing.Size(171, 26);
             this.producciónToolStripMenuItem1.Text = "Producción";
             this.producciónToolStripMenuItem1.Click += new System.EventHandler(this.producciónToolStripMenuItem1_Click);
             // 
