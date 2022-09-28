@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaCultivos));
             this.cmdLimpiar = new System.Windows.Forms.Button();
             this.cmdListar = new System.Windows.Forms.Button();
             this.grillaCultivos = new System.Windows.Forms.DataGridView();
@@ -95,6 +96,7 @@
             this.Controls.Add(this.cmdLimpiar);
             this.Controls.Add(this.cmdListar);
             this.Controls.Add(this.grillaCultivos);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmConsultaCultivos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Cultivos";

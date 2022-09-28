@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAgricultura));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.localidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,28 +68,28 @@
             // localidadesToolStripMenuItem
             // 
             this.localidadesToolStripMenuItem.Name = "localidadesToolStripMenuItem";
-            this.localidadesToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+            this.localidadesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.localidadesToolStripMenuItem.Text = "Localidades";
             this.localidadesToolStripMenuItem.Click += new System.EventHandler(this.localidadesToolStripMenuItem_Click);
             // 
             // cultivosToolStripMenuItem
             // 
             this.cultivosToolStripMenuItem.Name = "cultivosToolStripMenuItem";
-            this.cultivosToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+            this.cultivosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.cultivosToolStripMenuItem.Text = "Cultivos";
             this.cultivosToolStripMenuItem.Click += new System.EventHandler(this.cultivosToolStripMenuItem_Click);
             // 
             // producciónToolStripMenuItem
             // 
             this.producciónToolStripMenuItem.Name = "producciónToolStripMenuItem";
-            this.producciónToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+            this.producciónToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.producciónToolStripMenuItem.Text = "Producción";
             this.producciónToolStripMenuItem.Click += new System.EventHandler(this.producciónToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -105,21 +106,21 @@
             // localidadesToolStripMenuItem1
             // 
             this.localidadesToolStripMenuItem1.Name = "localidadesToolStripMenuItem1";
-            this.localidadesToolStripMenuItem1.Size = new System.Drawing.Size(171, 26);
+            this.localidadesToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.localidadesToolStripMenuItem1.Text = "Localidades";
             this.localidadesToolStripMenuItem1.Click += new System.EventHandler(this.localidadesToolStripMenuItem1_Click);
             // 
             // cultivosToolStripMenuItem1
             // 
             this.cultivosToolStripMenuItem1.Name = "cultivosToolStripMenuItem1";
-            this.cultivosToolStripMenuItem1.Size = new System.Drawing.Size(171, 26);
+            this.cultivosToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.cultivosToolStripMenuItem1.Text = "Cultivos";
             this.cultivosToolStripMenuItem1.Click += new System.EventHandler(this.cultivosToolStripMenuItem1_Click);
             // 
             // producciónToolStripMenuItem1
             // 
             this.producciónToolStripMenuItem1.Name = "producciónToolStripMenuItem1";
-            this.producciónToolStripMenuItem1.Size = new System.Drawing.Size(171, 26);
+            this.producciónToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.producciónToolStripMenuItem1.Text = "Producción";
             this.producciónToolStripMenuItem1.Click += new System.EventHandler(this.producciónToolStripMenuItem1_Click);
             // 
@@ -129,6 +130,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(488, 207);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmAgricultura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

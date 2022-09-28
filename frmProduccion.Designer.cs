@@ -29,6 +29,7 @@ namespace PryVelezFunesSP1H1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProduccion));
             this.cmdLimpiar = new System.Windows.Forms.Button();
             this.cmdCargar = new System.Windows.Forms.Button();
             this.lblFecha = new System.Windows.Forms.Label();
@@ -103,7 +104,7 @@ namespace PryVelezFunesSP1H1
             // mskDate
             // 
             this.mskDate.Location = new System.Drawing.Point(109, 21);
-            this.mskDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mskDate.Margin = new System.Windows.Forms.Padding(4);
             this.mskDate.Mask = "00/00/0000";
             this.mskDate.Name = "mskDate";
             this.mskDate.Size = new System.Drawing.Size(145, 22);
@@ -124,7 +125,7 @@ namespace PryVelezFunesSP1H1
             // mskCantidad
             // 
             this.mskCantidad.Location = new System.Drawing.Point(109, 154);
-            this.mskCantidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mskCantidad.Margin = new System.Windows.Forms.Padding(4);
             this.mskCantidad.Name = "mskCantidad";
             this.mskCantidad.Size = new System.Drawing.Size(145, 22);
             this.mskCantidad.TabIndex = 4;
@@ -164,7 +165,8 @@ namespace PryVelezFunesSP1H1
             this.Controls.Add(this.cmdLimpiar);
             this.Controls.Add(this.cmdCargar);
             this.Controls.Add(this.lblFecha);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmProduccion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Produccion";

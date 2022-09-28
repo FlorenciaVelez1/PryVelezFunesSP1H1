@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCultivos));
             this.cmdLimpiar = new System.Windows.Forms.Button();
             this.cmdCargar = new System.Windows.Forms.Button();
             this.lblCultivo = new System.Windows.Forms.Label();
@@ -40,10 +41,10 @@
             // 
             this.cmdLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.cmdLimpiar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.cmdLimpiar.Location = new System.Drawing.Point(11, 94);
-            this.cmdLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdLimpiar.Location = new System.Drawing.Point(15, 116);
+            this.cmdLimpiar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdLimpiar.Name = "cmdLimpiar";
-            this.cmdLimpiar.Size = new System.Drawing.Size(62, 27);
+            this.cmdLimpiar.Size = new System.Drawing.Size(83, 33);
             this.cmdLimpiar.TabIndex = 3;
             this.cmdLimpiar.Text = "Limpiar";
             this.cmdLimpiar.UseVisualStyleBackColor = true;
@@ -54,10 +55,10 @@
             this.cmdCargar.Enabled = false;
             this.cmdCargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.cmdCargar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.cmdCargar.Location = new System.Drawing.Point(137, 94);
-            this.cmdCargar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmdCargar.Location = new System.Drawing.Point(183, 116);
+            this.cmdCargar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmdCargar.Name = "cmdCargar";
-            this.cmdCargar.Size = new System.Drawing.Size(62, 27);
+            this.cmdCargar.Size = new System.Drawing.Size(83, 33);
             this.cmdCargar.TabIndex = 4;
             this.cmdCargar.Text = "Cargar";
             this.cmdCargar.UseVisualStyleBackColor = true;
@@ -68,19 +69,18 @@
             this.lblCultivo.AutoSize = true;
             this.lblCultivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblCultivo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblCultivo.Location = new System.Drawing.Point(9, 58);
-            this.lblCultivo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCultivo.Location = new System.Drawing.Point(12, 71);
             this.lblCultivo.Name = "lblCultivo";
-            this.lblCultivo.Size = new System.Drawing.Size(43, 15);
+            this.lblCultivo.Size = new System.Drawing.Size(53, 18);
             this.lblCultivo.TabIndex = 9;
             this.lblCultivo.Text = "Cultivo";
             // 
             // txtCultivo
             // 
-            this.txtCultivo.Location = new System.Drawing.Point(91, 58);
-            this.txtCultivo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCultivo.Location = new System.Drawing.Point(121, 71);
+            this.txtCultivo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCultivo.Name = "txtCultivo";
-            this.txtCultivo.Size = new System.Drawing.Size(110, 20);
+            this.txtCultivo.Size = new System.Drawing.Size(145, 22);
             this.txtCultivo.TabIndex = 2;
             this.txtCultivo.TextChanged += new System.EventHandler(this.txtCultivo_TextChanged);
             // 
@@ -89,37 +89,37 @@
             this.lblIdentificador.AutoSize = true;
             this.lblIdentificador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblIdentificador.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblIdentificador.Location = new System.Drawing.Point(9, 24);
-            this.lblIdentificador.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblIdentificador.Location = new System.Drawing.Point(12, 30);
             this.lblIdentificador.Name = "lblIdentificador";
-            this.lblIdentificador.Size = new System.Drawing.Size(74, 15);
+            this.lblIdentificador.Size = new System.Drawing.Size(87, 18);
             this.lblIdentificador.TabIndex = 7;
             this.lblIdentificador.Text = "Identificador";
             // 
             // mskIdentificador
             // 
-            this.mskIdentificador.Location = new System.Drawing.Point(91, 24);
-            this.mskIdentificador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mskIdentificador.Location = new System.Drawing.Point(121, 30);
+            this.mskIdentificador.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mskIdentificador.Mask = "99999";
             this.mskIdentificador.Name = "mskIdentificador";
             this.mskIdentificador.PromptChar = '0';
-            this.mskIdentificador.Size = new System.Drawing.Size(110, 20);
+            this.mskIdentificador.Size = new System.Drawing.Size(145, 22);
             this.mskIdentificador.TabIndex = 1;
             this.mskIdentificador.ValidatingType = typeof(int);
             this.mskIdentificador.TextChanged += new System.EventHandler(this.mskIdentidicador_TextChanged);
             // 
             // frmCultivos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(210, 130);
+            this.ClientSize = new System.Drawing.Size(280, 160);
             this.Controls.Add(this.mskIdentificador);
             this.Controls.Add(this.cmdLimpiar);
             this.Controls.Add(this.cmdCargar);
             this.Controls.Add(this.lblCultivo);
             this.Controls.Add(this.txtCultivo);
             this.Controls.Add(this.lblIdentificador);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmCultivos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cultivo";
